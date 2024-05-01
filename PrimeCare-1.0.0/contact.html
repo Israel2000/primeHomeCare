@@ -38,7 +38,16 @@
     })();
   </script>
   <script src="js/email-script.js"></script>
+  <script src="js/script.js"></script>
 </head>
+
+<style>
+  /* Style the input field */
+  #multiline-input {
+      width: 300px;
+      height: auto;
+  }
+</style>
 
 <body class="sub_page">
   <div class="hero_area">
@@ -142,19 +151,21 @@
                 Get In Touch
               </h2>
             </div>
-            <form action="">
+            <form action="#" id="contact-form">
               <input type="text" id="name" placeholder="Name" required/>
               <div class="top_input">
-                <input type="email" id="email" placeholder="Email" required/>
-                <input type="text" id="phone" placeholder="Phone Number" required/>
+                  <input type="email" id="email" placeholder="Email" required/>
+                  <input type="text" id="phone" placeholder="Phone Number" required/>
               </div>
-              <input type="text" id="message" placeholder="Message" class="message_input" required/>
+              <input type="text" id="subject" placeholder="Subject" required/>
+              <input size="30" id="message" placeholder="Message" class="message_input" required></input>
+              <input type="text" id="multiline-input" placeholder="Type here..." oninput="adjustTextareaHeight(this)">
+
               <div class="btn-box">
-                <button onclick="sendMail()">
-                  Send
-                </button>
+                  <button type="button" onclick="sendMail()">Send</button>
               </div>
-            </form>
+          </form>
+          
           </div>
         </div>
       </div>
