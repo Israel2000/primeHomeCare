@@ -1,7 +1,7 @@
 $white: #ffffff;
-$black: #000000;
+$black: #000000 !important;
 $primary1: #252525;
-$btnColor: #82c419;
+$btnColor: #ffffff;
 
 @mixin main-font {
   font-family: "Poppins", sans-serif;
@@ -558,7 +558,7 @@ a:focus {
 // we have section
 
 .wehave_section {
-  color: $white;
+  color: black !important;
   padding-left: 10%;
   padding-right: 5%;
   background-color: $primary1;
