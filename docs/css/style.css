@@ -1278,7 +1278,7 @@ a:focus {
 
 .gallery .gallery-item .gallery-content .gallery-inner {
   transition: 0.5s;
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.1); */
   padding-top: 40px;
 }
 

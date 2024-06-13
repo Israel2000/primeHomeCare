@@ -31,6 +31,47 @@
   <!-- send email -->
 </head>
 <style>
+   .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+    .circle-card {
+      background-color: #f8f9fa;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      position: relative;
+    }
+    .circle-card img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-content {
+      position: absolute;
+    bottom: 0;
+    background: #c4a8192a;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 35px 0;
+    }
+    @media (min-width: 768px) {
+      .circle-card {
+        flex: 1 1 calc(33.333% - 20px);
+      }
+    }
    .card {
       height: 200px;
       background-size: cover;
@@ -146,8 +187,12 @@
         </nav>
       </div>
     </header>
-    
-    <!-- top images -->
+    <div class="container">
+   <h2 class="mt-2">Services</h2>
+   
+</div>
+    <!-- top images --><hr class="container-fluid" style="background-color: #c4a719;">
+
     <div class="container mt-4">
       <div class="row">
         <div class="col-md-3">
@@ -184,10 +229,7 @@
     </div>
 
    
-<div class="container">
-   <h2 class="mt-2">Services</h2>
-  
-</div>
+
 <br>
 <section class="wehave_section">
   <div class="container">
@@ -219,7 +261,29 @@
   
           Volunteer in your community.
         </p><br/>
-       
+       <div class="wrapper">
+    <div class="circle-card">
+      <img src="https://via.placeholder.com/150" alt="Image 1">
+      <div class="card-content">
+        <h5 class="card-title">Column 1</h5>
+        <p class="card-text">Content for the first column.</p>
+      </div>
+    </div>
+    <div class="circle-card">
+      <img src="https://via.placeholder.com/150" alt="Image 2">
+      <div class="card-content">
+        <h5 class="card-title">Column 2</h5>
+        <p class="card-text">Content for the second column.</p>
+      </div>
+    </div>
+    <div class="circle-card">
+      <img src="https://via.placeholder.com/150" alt="Image 3">
+      <div class="card-content">
+        <h5 class="card-title">Column 3</h5>
+        <p class="card-text">Content for the third column.</p>
+      </div>
+    </div>
+  </div>
 
         <p>
           Lesya International LLC will provide non-medical transportation services to individuals living in the community. This service is designed to give individuals with intellectual and developmental disabilities the opportunity to access meaningful activities and medical transportation. It supports individuals in traveling to and from their homes, day programs, or jobs.
@@ -228,7 +292,7 @@
       </div>
       </section>
     
-      
+   
                                                                                  
  <!-- footer -->
  <section class="info_section layout_padding2">
