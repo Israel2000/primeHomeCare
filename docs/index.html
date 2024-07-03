@@ -12,11 +12,13 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Lesya Disablity Care Int.</title>
+  <title>Lesya Home Care Int.</title>
 
   <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" sizes="50x50">
+
+
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- fonts awesome style -->
@@ -32,9 +34,9 @@
 </head>
 <style>
   .btn-gold {
-    background-color: gold;
+    background-color: #efdb78;
     color: black; /* Default text color */
-    border: 1px solid gold;
+    border: 1px solid #efdb78;
 }
 
 .btn-gold:hover {
@@ -45,7 +47,7 @@
   </style>
 <body>
     <!-- header section strats -->
-    <header class="header_section header_shadow">
+    <header class="header_section">
       <div class="contact_nav_container">
         <div class="container">
           <div class="contact_nav">
@@ -70,103 +72,53 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <div class="custom_menu-btn">
-            <button onclick="openNav()">
-              <span class="s-1"> </span>
-              <span class="s-2"> </span>
-              <span class="s-3"> </span>
-            </button>
-          </div>
-          <div id="myNav" class="overlay">
-            <div class="menu_btn-style ">
-              <button onclick="closeNav()">
-                <span class="s-1"> </span>
-                <span class="s-2"> </span>
-                <span class="s-3"> </span>
-              </button>
-            </div>
-            <div class="overlay-content">
-              <a class="active" href="index.html"> Home <span class="sr-only">(current)</span></a>
-              <a class="" href="about.html"> About</a>
-
-              <a class="" href="services.html"> Services </a>
-              <!-- <a class="" href="team.html"> Our Team</a> -->
-              <!-- <a class="" href="testimonial.html"> Testimonial</a> -->
-              <a class="" href="contact.html"> Contact Us</a>
-            </div>
-          </div>
-          <a class="navbar-brand" href="index.html">
-            <span>
-              <img src="images/LesyaInternat_logo.jpg" alt="logo" width="150" />
-          </a>
-          <div class="user_option">
-            <a href="index.html">
-              <span>
-                Home
-              </span>
-              <!-- <i class="fa fa-home" aria-hidden="true"></i> -->
-            </a>
-            <a href="about.html">
-              <span>
-                About Us
-              </span>
-              <!-- <i class="fa fa-user-o" aria-hidden="true"></i> -->
-            </a>
-             <a href="services.html">
-              <span>
-                 Services
-              </span>
-            <a href="contact.html">
-              <span>
-                Contact Us
-              </span>
-              <!-- <i class="fa fa-address-card" aria-hidden="true"></i> -->
-            </a>
-            <!-- <form class="form-inline">
-              <button class="btn  nav_search-btn" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
-            </form> -->
-          </div>
-        </nav>
-      </div>
     </header>
     <!-- end header section -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+    <a class="navbar-brand" href="#">
+              <img src="images/LesyaInternat_logo.jpg" alt="logo" width="150" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="careers.html">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div></div>
+  </nav>
     <!-- slider section -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/houseImage23.webp" alt="First slide" height="600">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Welcome to Leysa International </h5>
-              <p>...</p>
-               <a href="" class="btn btn-gold">
-                  Contact Us
-                </a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/houseImage23.webp" alt="Second slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Welcome to Leysa International </h5>
-              <p>...</p>
-               <a href="" class="btn btn-gold">
-                  Contact Us
-                </a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/houseImage23.webp" alt="Third slide" >
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Welcome to Leysa International </h5>
-              <p>...</p>
-               <a href="" class="btn btn-gold">
-                  Contact Us
-                </a>
-          </div>
-        </div>
+       <div class="carousel-item active">
+  <img class="d-block w-100" src="images/houseImage23.webp" alt="First slide">
+  <div class="carousel-caption">
+    <div class="full-screen-heading">
+      <h1 class="" style="color:#efdb78">Welcome to Leysa International</h1>
+      <div>
+        <p>...</p>
+        <a href="" class="btn btn-gold">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+     
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -182,7 +134,7 @@
 <div class="">
     <div class="row m-5">
       <div class="col-md-8">
-        <h2 class="align-center">Welcome to <span style="color:#c4a719">LESYA Home Care Service</span></h2>
+        <h2 class="align-center">Welcome to <span style="color:#efdb78">LESYA Home Care Service</span></h2>
         <p class="">
           <span class="font-weight-bold">Service We Offer:</span> <br/>
           Our home care provider services offer compassionate assistance  <br/>
@@ -198,11 +150,21 @@
           Transportation
         </p> 
         For inquiries, please call us at 720-757-1407 or send us an inquiry to contact us.
+        <a class="" href="contact.html"> Contact Us</a>
+
       </div>
       <div class="col-md-4">
         <!-- <h2>Column 2</h2>
         <p>This is the content of column 2.</p> -->
-        <img src="images/image1.jpeg" alt="" class="img-fluid" width="500">
+        <!-- <img src="images/image1.jpeg" alt="" class="img-fluid" width="500"> -->
+          <div class="polaroid-container">
+    <div class="polaroid">
+      <img src="images/image1.jpeg" alt="Polaroid Photo 1" class="polaroid-photo" width="400">
+    </div>
+    <div class="polaroid">
+      <img src="images/image1.jpeg" alt="Polaroid Photo 2" class="polaroid-photo" width="400">
+    </div>
+  </div>
       </div>
     </div>
   </div>
@@ -227,7 +189,7 @@
           </a>
         </div>
         <div class="img-box">
-          <img src="images/we_img.jpg" alt="" />
+                        <img src="images/girlcooking.png" class="img-fluid w-100" alt="">
         </div>
       </div>
     </div>
