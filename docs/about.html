@@ -29,7 +29,83 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
+<style>
+  .detail-box {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.title {
+  font-size: 2.5em;
+  color: #007bff;
+  /* text-align: center; */
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.description {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+.certifications {
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+.certifications p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.certifications span {
+  display: block;
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.certifications i {
+  color: #007bff;
+  margin-right: 8px;
+}
+
+.mission-title {
+  font-size: 2em;
+  color: #28a745;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mission-description {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  /* text-align: center; */
+}
+
+</style>
 <body >
 <header class="header_section header_shadow">
       <div class="contact_nav_container">
@@ -58,7 +134,7 @@
       </div>  <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
     <a class="navbar-brand" href="#">
-              <img src="images/LesyaInternat_logo.jpg" alt="logo" width="150" />
+              <img href="index.html" src="images/LesyaInternat_logo.jpg" alt="logo" width="150" />
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,9 +166,8 @@
   <!-- about section -->
 
    <div class="container">
-   <h2 class="mt-2">About Us</h2>
-
-</div>
+      <h2 class="mt-2 text-center">About Us</h2>
+   </div>
     <!-- top images --><hr class="container-fluid" style="background-color: #c4a719;">
 
  
@@ -123,34 +198,22 @@
   <div class="container">
     <div class="box">
       <div class="detail-box">
-        <h2>
-          Who We Are
-        </h2>
-        <p>
-          Lasya International LLC is a Residential Service Agency that supports adults with intellectual and developmental disabilities enrolled in Colorado. Our host home is located in the Denver-Metro Area.Our area of focus is providing appropriate residential settings and engaging community access opportunities for our clients. Our agency is focused on ensuring all individuals have access to a safe, supportive and flourishing living situation which encourages their independence and personal growth. i
+        <h2 class="title">Who We Are</h2>
+        <p class="description">
+          Lasya International LLC is a Residential Service Agency that supports adults with intellectual and developmental disabilities enrolled in Colorado. Our host home is located in the Denver-Metro Area. Our area of focus is providing appropriate residential settings and engaging community access opportunities for our clients. Our agency is focused on ensuring all individuals have access to a safe, supportive, and flourishing living situation which encourages their independence and personal growth.
         </p>
-        <br>
-        <span>
-         
-          We work with individuals enrolled in the following Community Centered Boards (CCBs): <br/>
-
-<span><i class="fa fa-certificate" aria-hidden="true"></i>
-          North Metro Community Services (NMCS) <br/>
-</span>
-<span><i class="fa fa-certificate" aria-hidden="true"></i>
-          Developmental Pathways (DP)<br/>
-</span>
-<span><i class="fa fa-certificate" aria-hidden="true"></i>
-          Rocky Mountain Human Services (RMHS)<br/>
-</span>
-        </p>
-        <p><br/>
-          <h2>Mission Statement</h2>
+        <div class="certifications">
+          <p class="mt-2">We work with individuals enrolled in the following Community Centered Boards (CCBs):</p>
+          <span><i class="fa fa-certificate" aria-hidden="true"></i> North Metro Community Services (NMCS)</span>
+          <span><i class="fa fa-certificate" aria-hidden="true"></i> Developmental Pathways (DP)</span>
+          <span><i class="fa fa-certificate" aria-hidden="true"></i> Rocky Mountain Human Services (RMHS)</span>
+        </div>
+        <h2 class="mission-title">Mission Statement</h2>
+        <p class="mission-description">
           To provide the highest level of individualized residential and community support to those with intellectual and developmental disabilities. We provide engaging and personalized programs that result in the highest level of social, physical, and emotional independence in one’s life.
         </p>
-        <br>
-        
       </div>
+      
       <!-- <div class="img-box">
         <img src="images/we_img.jpg" alt="" />
       </div> -->
