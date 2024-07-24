@@ -102,7 +102,7 @@ p {
 }
 
 .contact_nav_container .contact_nav a {
-  color: #ffffff;
+  color: #000000;
 }
 
 .header_section .nav_container {
@@ -1466,7 +1466,7 @@ a:focus {
  }
 
  .full-screen-heading {
-   width: 100%;
+   min-width: 100%;
    padding: 20px;
  }
 
@@ -1476,6 +1476,7 @@ a:focus {
    color: #efdb78;
    margin: 0;
    padding: 10px;
+   font-size: 60px;
  }
 
  .full-screen-heading p {
