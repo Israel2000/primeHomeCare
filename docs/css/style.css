@@ -491,7 +491,7 @@ a:focus {
 
 .service_section .box {
   padding: 25px 25px;
-  position: relative;
+  /* position: relative; */
 }
 
 .service_section .box .img-box {
