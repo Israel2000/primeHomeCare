@@ -44,39 +44,39 @@
     border: 1px solid black; /* Border color on hover */
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+ .carousel-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px; /* Adjust this height as needed */
+            position: relative;
+        }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
 
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
+        .carousel-caption {
+            z-index: 2;
+            color: #fff;
+            text-align: center;
+            background: none; /* Remove background or border */
+            padding: 0; /* Remove padding */
+        }
 
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
+        .carousel-caption h5, 
+        .carousel-caption p {
+            margin: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to improve text visibility */
+            border-radius: 5px; /* Optional: Rounded corners */
+        }
 
   </style>
 <body>
@@ -88,19 +88,19 @@
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Address : 15200 E Girard  Ave. Suite 3500 Aurora Co 80014
+                Address:15200 E. Girard  Ave. Suite 3500 Aurora Co 80014
               </span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                Email : lesyallc@gmail.com
+                Email: lesyallc@gmail.com
               </span>
             </a>
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Phone Call : 720-757-1407
+                 Call: 720-757-1407
               </span>
             </a>
           </div>
@@ -137,46 +137,12 @@
     
   </nav>
     <!-- slider section -->
-    <div class="container mt-5">
-      <div id="sliderWithContainer" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="images/girlcooking.png" class="d-block w-100" alt="Slide 1">
-                  <div class="carousel-caption">
-                      <h5>Slide 1</h5>
-                      <p>Description for slide 1.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <img src="images/boyathome.png" class="d-block w-100" alt="Slide 2">
-                  <div class="carousel-caption">
-                      <h5>Slide 2</h5>
-                      <p>Description for slide 2.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <img src="https://via.placeholder.com/1200x600" class="d-block w-100" alt="Slide 3">
-                  <div class="carousel-caption">
-                      <h5>Slide 3</h5>
-                      <p>Description for slide 3.</p>
-                  </div>
-              </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#sliderWithContainer" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#sliderWithContainer" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
-      </div>
-  </div>
+ 
     <!-- end slider section -->
 
    
-  
-<div class="container">
+  <!-- welcome -->
+<div class="container mb-2">
     <div class="row">
       <div class="col-md-8">
         <h2 class="">Welcome to <span style="color:#efdb78">LESYA Home Care Service</span></h2>
@@ -199,17 +165,17 @@
 
       </div>
       <div class="col-md-4">
-        <!-- <h2>Column 2</h2>
-        <p>This is the content of column 2.</p> -->
-        <!-- <img src="images/image1.jpeg" alt="" class="img-fluid" width="500"> -->
-          <div class="polaroid-container">
+        <div class="polaroid">
+      <img src="images/Family_comes.png" alt="Polaroid Photo 1" class="polaroid-photo" width="400">
+    </div>
+          <!-- <div class="polaroid-container">
     <div class="polaroid">
       <img src="images/image1.jpeg" alt="Polaroid Photo 1" class="polaroid-photo" width="400">
     </div>
     <div class="polaroid">
       <img src="images/image1.jpeg" alt="Polaroid Photo 2" class="polaroid-photo" width="400">
     </div>
-  </div>
+  </div> -->
       </div>
     </div>
   </div>

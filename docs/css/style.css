@@ -1499,6 +1499,10 @@ a:focus {
      /* Adjust for tablets */
    }
 
+   .contact_nav_container {
+    display: block;
+  }
+
    .full-screen-heading p {
      font-size: 0.9rem;
      /* Adjust for tablets */
