@@ -44,39 +44,8 @@
     border: 1px solid black; /* Border color on hover */
 }
 
- .carousel-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 600px; /* Adjust this height as needed */
-            position: relative;
-        }
 
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
 
-        .carousel-caption {
-            z-index: 2;
-            color: #fff;
-            text-align: center;
-            background: none; /* Remove background or border */
-            padding: 0; /* Remove padding */
-        }
-
-        .carousel-caption h5, 
-        .carousel-caption p {
-            margin: 0;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to improve text visibility */
-            border-radius: 5px; /* Optional: Rounded corners */
-        }
 
   </style>
 <body>
@@ -138,16 +107,15 @@
   </div>
   </nav>
     <!-- slider section -->
-  <div class="d-flex justify-content-center align-items-center">
+  <div class="d-flex justify-content-center align-items-center mb-4">
     <img src="images/welcome-poster.jpg" alt="" width="1500" alt="Image" class="img-fluid">
   </div>
     <!-- end slider section -->
 
-   
   <!-- welcome -->
-<div class="container mb-2">
+<div class="container-fluid mb-2">
     <div class="row">
-      <div class="col-md-6 col-12" >
+      <div class="col-md-6 md-6-1">
         <h2 class="">Welcome to <span style="color:#efdb78">LESYA Home Care Service</span></h2>
         <p class="">
           <span class="font-weight-bold">Service We Offer:</span> <br/>
@@ -166,7 +134,7 @@
         For inquiries, please call us at 720-757-1407 or send us an inquiry to contact us.
         <a class="" href="contact.html"> Contact Us</a>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 md-6">
         <div class="polaroid">
       <img src="images/Family_comes.png" class="polaroid-photo" width="400" alt="Image" class="img-fluid">
         </div>
@@ -176,7 +144,7 @@
 
  <!-- about section -->
 
-  <div class="container-fluid" style="background-color: #efdb78">
+  <div class="container-fluid mt-2" style="background-color: #efdb78">
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
                 <!-- <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Placeholder Image"> -->
@@ -373,76 +341,76 @@
 
   </section>
 
-  <!-- footer -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <a class="navbar-brand" href="#">
-            <img src="images/LesyaInternat_logo.jpg" alt="logo" width="150" />
-          </a>
-          <div class="info_contact">
-            <h5>
-              Address
-            </h5>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location: 15200 E Girard  Ave. Suite 3500 Aurora Co 80014
-                </span>
-              </a>
-              <a href="tel:+17207571407">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call 720-757-1407
-                </span>
-              </a>
-              <a href="mailto:lesyallc@gmail.com">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                  lesyallc@gmail.com
-              </a>
-            </div>
-          </div>
-         
-        </div>
-        <div class="col-md-4">
-          <div class="info_link_box">
-            <h5>
-              Navigation
-            </h5>
-            <div class="info_links">
-              <a class="active" href="index.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
-              <a class="" href="about.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> About</a>
-              <a class="" href="services.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Services </a>
-              <!-- <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a> -->
-              <!-- <a class="" href="testimonial.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Testimonial</a> -->
-              <a class="" href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
+   <!-- footer -->
+ <section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a class="navbar-brand" href="#">
+          <img src="images/LesyaInternat_logo.jpg" alt="logo" width="150" />
+        </a>
+        <div class="info_contact">
           <h5>
-            Connect with us!
+            Address
           </h5>
-          <div class="info_social">
+          <div class="contact_link_box">
             <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location: 
+              </span>
             </a>
-            <!-- <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a> -->
-            <!-- <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a> -->
-            <!-- <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a> -->
+            <a href="tel:+17207571407">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call 720-757-1407
+              </span>
+            </a>
+            <a href="mailto:lesyallc@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+                lesyallc@gmail.com
+            </a>
+          </div>
+        </div>
+       
+      </div>
+      <div class="col-md-4">
+        <div class="info_link_box">
+          <h5>
+            Navigation
+          </h5>
+          <div class="info_links">
+            <a class="active" href="index.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+            <a class="" href="about.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> About</a>
+            <a class="" href="services.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Services </a>
+            <!-- <a class="" href="team.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Our Team</a> -->
+            <!-- <a class="" href="testimonial.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Testimonial</a> -->
+            <a class="" href="contact.html"> <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</a>
           </div>
         </div>
       </div>
+      <div class="col-md-4">
+        <h5>
+          Connect with us!
+        </h5>
+        <div class="info_social">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <!-- <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a> -->
+          <!-- <a href="">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a> -->
+          <!-- <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a> -->
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- end info section -->
 
