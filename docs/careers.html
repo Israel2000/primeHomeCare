@@ -67,11 +67,16 @@
     text-align: center;
     padding: 35px 0;
     }
-    @media (min-width: 768px) {
-      .circle-card {
-        flex: 1 1 calc(33.333% - 20px);
-      }
+    #notification {
+            display: none;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #d4edda; /* Light green background for success */
+            color: #155724; /* Dark green text */
+            border: 1px solid #c3e6cb; /* Green border */
+            border-radius: 5px;
     }
+
    .card {
       height: 200px;
       background-size: cover;
@@ -160,8 +165,6 @@
 </div>
     <!-- top images --><hr class="container-fluid" style="background-color: #c4a719;">
 
-   
-
 <br>
 <section class="wehave_section">
   <div class="container">
@@ -184,37 +187,36 @@
       <div class="container m-5">
     <h5>Provider Application Form</h5>
     <!-- nodemailer -->
-    <form action="/send_email" method="post">
-      <div class="form-group">
-        <label for="fullName">Full Name</label>
-        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
-      </div>
-      <div class="form-group">
-        <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email">
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-      </div>
-      <div class="form-group">
-        <label for="applicationType">Application Type</label>
-        <select class="form-control" id="applicationType">
-          <option>Select Application Type</option>
-          <option>Host Home Provider</option>
-          <option>Family Care Giver</option>
-          <option>Driver</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-gold" style="background-color: #b19500; color: #f8f9fa;">Submit Application</button>
+    <div id="notification" style="display: none; color: green;"></div> <!-- Notification Area -->
+        
+    <form id="applicationForm">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+            <label for="applicationType">Application Type</label>
+            <select class="form-control" id="applicationType" name="applicationType" required>
+                <option value="">Select Application Type</option>
+                <option value="Host Home Provider">Host Home Provider</option>
+                <option value="Family Care Giver">Family Care Giver</option>
+                <option value="Driver">Driver</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-gold" style="background-color: #b19500; color: #f8f9fa;">Submit Application</button>
     </form>
   </div>
-      </div>
-      
-      </section>
-    
-   
-                                                                                 
+  </div>
+</section>
+                                                                   
  <!-- footer -->
  <section class="info_section layout_padding2">
   <div class="container">
@@ -285,11 +287,66 @@
     </div>
   </div>
 </section>
+
+<script>
+document.getElementById('applicationForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    var formData = new FormData(this);
+
+    fetch('/send_email', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Show the notification message
+            var notification = document.getElementById('notification');
+            notification.style.display = 'block';
+            notification.innerText = 'Your application has been submitted successfully!';
+
+            // Clear the form fields if needed
+            this.reset();
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Optionally, handle error case
+    });
+});
+      event.preventDefault(); // Prevent the default form submission
+  
+      var formData = new FormData(this);
+  
+      fetch('/send_email', {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => response.text()) // Change this to text
+      .then(data => {
+          // Show the notification message
+          var notification = document.getElementById('notification');
+          notification.style.display = 'block';
+          notification.innerText = 'Your application has been submitted successfully!'; // Show success message
+
+          // Clear the form fields if needed
+          this.reset();
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          var notification = document.getElementById('notification');
+          notification.style.display = 'block';
+          notification.innerText = 'There was an error submitting your application. Please try again.'; // Show error message
+      });
+</script>
+</body>
+</html>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
-  <script src="docs/careers.js"></script>
+  <script src="careers.js"></script>
 
 
 </body>
